@@ -1,0 +1,21 @@
+@import '../../../Styles/Scss/Vars.scss';
+
+.back__to__top{
+    padding:1rem;
+    background-color: $yellow;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: fixed;
+    right:5px;
+    bottom:5px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    &.display{
+        visibility: visible;
+        opacity:1;
+    }
+}

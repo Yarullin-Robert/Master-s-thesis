@@ -1,0 +1,59 @@
+@import '../../../Styles/Scss/Vars.scss';
+
+.header{
+    width: 100%;
+    height: $header;
+    padding: 0 10px;
+    grid-area: header;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    &__brand{
+        color:$yellow;
+        white-space: nowrap;
+    }
+    
+    &__navbar{
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        max-width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        &__item{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between; 
+            box-sizing: border-box; 
+            a{  
+                font-size:.7rem;
+                margin: 0 0 0 10px;
+                color: rgb(243, 228, 255);
+            }
+            @media (max-width:749px){
+                background-color: $black;
+                width: 100%;
+                a{
+                    font-size: .5rem;
+                    letter-spacing: 1px; 
+                    margin: auto;
+                    box-shadow: none;
+                }
+            } 
+        }
+        a{
+            text-align: center;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+        @media (max-width:749px) {
+            flex-flow: column;
+            height: 60px;
+            padding: 10px 0 0 0;
+        }
+    }
+}

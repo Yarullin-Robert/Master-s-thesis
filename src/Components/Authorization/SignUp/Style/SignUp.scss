@@ -1,0 +1,28 @@
+@import '../../../../Styles/Scss/Vars.scss';
+
+.sign__up{
+    &__form{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr auto auto;
+        grid-gap: 20px;
+        >div{
+            >input{
+                padding:5px 10px;
+                width:100%
+            }
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        &__button{
+            button{
+                width:100%;
+                border:none;
+                outline:none;
+                padding:5px;
+                background-color: rgb(20,20,20);
+                color:$yellow;
+            }
+        }
+    }
+}

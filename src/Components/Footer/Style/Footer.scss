@@ -1,0 +1,33 @@
+@import '../../../Styles/Scss/Vars.scss';
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: $black;
+    &__container{
+        display: flex;
+        flex-flow:row wrap;
+        &__socials{
+            &__link{
+                cursor: pointer;
+                margin: 0 10px 0 0;
+                color:$yellow;
+            }        
+            margin-right:auto;   
+            @media(max-width:749px){
+                margin:auto
+            }
+        }
+        &__credits{
+            margin-left:auto;
+            display: flex;
+            p{
+                margin: auto;
+                color:$yellow;
+            }
+            @media(max-width:749px){
+                margin:auto
+            }
+        }
+    }
+}

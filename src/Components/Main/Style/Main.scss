@@ -1,0 +1,9 @@
+.main{
+    display:flex;
+    justify-content: center;
+    &__container{
+        margin-top: 20px;
+        display:flex;
+        justify-content: center;
+    }
+}
